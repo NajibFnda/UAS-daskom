@@ -6,12 +6,12 @@
   <title>Beranda</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
+    /* body {
     margin: 0;
     font-family: Arial, sans-serif;
     height: 60vh;
     background-color: #f4f4f4;
-    }
+    } */
       /* SLIDER */
     .slider {
         width: 100%;
@@ -158,11 +158,13 @@ button:hover {
 /* SYARAT */
 .syarat-container {
     margin: 40px auto;
-    max-width: 1200px;
-    padding: 20px;
+    max-width: 100%;
+    padding: 70px;
+    padding-right: 10%;
+    padding-left: 10%;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .syarat-container h2 {
@@ -224,57 +226,164 @@ button:hover {
 }
 
 
+/* Artikel Section */
+.artikel-section {
+    text-align: center;
+    padding: 70px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
 
+.artikel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
 
+/* Bagian Teks Artikel */
+.artikel-text {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+    text-align: center;
+}
+
+.artikel-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.artikel-text p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Bagian Card Artikel */
+.artikel-container {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.artikel-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.artikel-card:hover {
+    transform: translateY(-5px);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.artikel-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artikel-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.artikel-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.artikel-content .button {
+    align-self: start;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.artikel-content .button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .artikel-wrapper {
+        flex-direction: column;
+    }
+
+    .artikel-container {
+        justify-content: center;
+    }
+
+    .artikel-card {
+        width: 100%;
+    }
+}
   </style>
 </head>
 <body>
-          <!-- Nav -->
-          <nav class="navbar">
-            <a href="#" style="font-size: 25px;" class="navbar-brand">PMANCING</a>
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" style="font-size: 25px;" class="navbar-brand">PMANCING</a>
             <ul class="navbar-nav">
-              <li>
-                <a href="index.html">Beranda</a>
-            </li>
-            <li>
-                <a href="#">Profil</a>
-                <ul class="hov">
-                  <li><a href="#">Profil</a></li>
-                  <li><a href="#">Masa Jabatan</a></li>
-                  <li><a href="#">Pencapaian</a></li>
-                  <li><a href="#">Sejarah</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Artikel</a>
-                <ul class="hov">
-                    <li><a href="artikel.html">artikel</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Buku Tamu</a>
-                <ul class="hov">
-                    <li><a href="form.html"> Tulis Komentar</a></li>
-                    <li><a href="lapor.html">lapor</a></li>
-                    <li><a href="kritiksaran.html">Kritik & Saran</a></li>
-                    <li><a href="bukutamu.html">Buku Tamu</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-                <ul class="hov">
-                  <li><a href="gallery.html">Presiden</a></li>
-                  <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
-                  <li><a href="istananegara.html">Istana Negara</a></li>
-                  <li><a href="kenangan.html">Kenangan Sejarah</a></li>
-                </ul>
-              </li>
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul class="hov">
+                        <li><a href="profil.html">Profil</a></li>
+                          <li><a href="filosofi.html">Filosofi</a></li>
+                          <li><a href="sejarah.html">Sejarah</a></li>
+                          <li><a href="tes.html">Sejarah</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artikel</a>
+                    <ul class="hov">
+                        <li><a href="artikel.html">artikel</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Buku Tamu</a>
+                    <ul class="hov">
+                        <li><a href="form.html"> Tulis Komentar</a></li>
+                        <li><a href="lapor.html">lapor</a></li>
+                        <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                        <li><a href="bukutamu.html">Buku Tamu</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                    <ul class="hov">
+                      <li><a href="gallery.html">Presiden</a></li>
+                      <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
+                      <li><a href="istananegara.html">Istana Negara</a></li>
+                      <li><a href="kenangan.html">Kenangan Sejarah</a></li>
+                    </ul>
+                </li>
             </ul>
-          </nav>
-          <!-- Nav END -->
+    </nav>
+    <!-- Nav END -->
           
           <!-- SLIDER -->
           <div class="slider">
@@ -356,5 +465,34 @@ button:hover {
       </div>
       <!-- SYARAT END -->
     
+      <section class="artikel-section">
+        <div class="artikel-wrapper">
+            <!-- Bagian Teks Artikel -->
+            <div class="artikel-text">
+                <h2>Artikel</h2>
+                <p>Seputar Artikel Wisata Mancing.</p>
+            </div>
+
+            <!-- Bagian Card Artikel -->
+            <div class="artikel-container">
+                <div class="artikel-card">
+                    <img src="pict/a.jpg" alt="Artikel 1">
+                    <div class="artikel-content">
+                        <h3>Karbon Biru Jadi Strategi Mitigasi Bencana di Indonesia</h3>
+                        <p>JAKARTA (27/6) – Indonesia tengah mempersiapkan implementasi karbon biru (blue carbon) guna mengur...</p>
+                        <a href="#" class="button">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="artikel-card">
+                    <img src="pict/e.jpg" alt="Artikel 2">
+                    <div class="artikel-content">
+                        <h3>KKP Optimis Penuhi 32,5 juta Ha Kawasan Konservasi Perairan pada tahun 2030</h3>
+                        <p>JAKARTA (1/7) – Kementerian Kelautan dan Perikanan fokus dalam meningkatkan luas wilayah dan...</p>
+                        <a href="#" class="button">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

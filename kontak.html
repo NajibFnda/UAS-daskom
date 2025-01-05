@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+
+        .container {
+            margin: auto;
+        max-width: 100%;
+        padding: 10px;
+        color: rgb(58, 58, 58);
+        padding-right: 16%;
+        padding-left: 16%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            display: block;
+            background-color: #203eff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100px  ;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #3954ff;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <a href="#" style="font-size: 25px;" class="navbar-brand">PMANCING</a>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul class="hov">
+                        <li><a href="profil.html">Profil</a></li>
+                          <li><a href="filosofi.html">Filosofi</a></li>
+                          <li><a href="sejarah.html">Sejarah</a></li>
+                          <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Artikel</a>
+                    <ul class="hov">
+                        <li><a href="artikel.html">artikel</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Buku Tamu</a>
+                    <ul class="hov">
+                        <li><a href="form.html"> Tulis Komentar</a></li>
+                        <li><a href="lapor.html">lapor</a></li>
+                        <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                        <li><a href="bukutamu.html">Buku Tamu</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                    <ul class="hov">
+                      <li><a href="gallery.html">Presiden</a></li>
+                      <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
+                      <li><a href="istananegara.html">Istana Negara</a></li>
+                      <li><a href="kenangan.html">Kenangan Sejarah</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    <!-- Nav END -->
+
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="name">Nama Belakang</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama belakang Anda" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+            <label for="phone">Nomor telepon</label>
+            <input type="tel" id="phone" placeholder="+62" name="phone">
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" placeholder="Ketik pesan Anda" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Teks dan Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px; /* Jarak antara teks dan gambar */
+        }
+
+        .content {
+            flex: 2; /* Memberikan porsi ruang lebih besar untuk teks */
+        }
+
+        .image-container {
+            flex: 1; /* Memberikan porsi ruang lebih kecil untuk gambar */
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%; /* Gambar tidak melebihi lebar kontainer */
+            height: auto; /* Menjaga proporsi gambar */
+            border: 1px solid #ccc; /* Garis tepi pada gambar */
+            border-radius: 5px; /* Opsional: Membuat sudut gambar melengkung */
+        }
+
+        .image-container .caption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>PRASEJARAH</h2>
+            <p>
+                Memancing merupakan praktik prasejarah yang sudah ada sejak 70.000 tahun lalu. 
+                Sejak abad ke-16, kapal penangkap ikan sudah dapat menyeberangi lautan untuk mencari ikan, 
+                dan sejak abad ke-19, kapal yang lebih besar sudah dapat digunakan dan dalam beberapa kasus, 
+                ikan dapat diproses di atas kapal. Ikan biasanya ditangkap di alam liar. Teknik untuk menangkap ikan 
+                meliputi pengumpulan dengan tangan, penombak, jaring, pemancingan, dan perangkap.
+            </p>
+            <p>
+                Istilah penangkapan ikan dapat diterapkan untuk menangkap hewan air lainnya seperti kerang, cephalopoda, 
+                krustasea, dan echinodermata. Istilah ini biasanya tidak diterapkan untuk menangkap mamalia air, seperti paus, 
+                di mana istilah perburuan paus lebih tepat, atau untuk menangkap ikan budidaya. Selain menyediakan makanan, 
+                penangkapan ikan modern juga merupakan olahraga rekreasi.
+            </p>
+        </div>
+        <div class="image-container">
+            <img src="pict/pancing.png" alt="Pasar Ikan Besar">
+            <div class="caption">
+                <i>Pasar Ikan Besar</i>, dilukis oleh Jan Brueghel the Elder
+            </div>
+        </div>
+    </div>
+</body>
+</html>

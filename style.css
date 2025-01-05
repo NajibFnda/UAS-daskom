@@ -1,7 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  padding-top: 90px;
+  /* padding: 0; */
+  background-color: #f4f4f9;
   overflow-x: hidden;
+  height: 60vh;
 }
       /* navbar  */
 .navbar {
