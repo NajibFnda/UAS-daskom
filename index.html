@@ -6,13 +6,6 @@
   <title>Beranda</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    height: 60vh;
-    background-color: #f4f4f4;
-    } */
-      /* SLIDER */
     .slider {
         width: 100%;
         height: 450px;
@@ -21,7 +14,6 @@
         align-items: center;
         position: relative;
         overflow: hidden;
-        border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
@@ -35,13 +27,16 @@
     .slide {
         width: 100%;
         flex-shrink: 0;
+        position: relative; 
     }
 
     .slide img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
     }
+    
 
     input[type="radio"] {
         display: none;
@@ -69,10 +64,9 @@
     }
 
     .navigation label {
-        width: 15px;
-        height: 15px;
+        width: 45px;
+        height: 7px;
         background-color: rgba(255, 255, 255, 0.7);
-        border-radius: 50%;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -84,263 +78,261 @@
     input[type="radio"]:checked + label {
         background-color: #333;
     }
+    .text-overlay a{
+        text-decoration: none;
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        color: white; 
+        font-size: 24px; 
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+
     /* SLIDER END */
     
 
     /* DESTINATION */
     .destination   {
-    background-color: #eaf2ff;
-    border-radius: 10px;
-    padding: 20px 40px;
-    max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+        background-color: #eaf2ff;
+        border-radius: 10px;
+        padding: 20px 40px;
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
 
-.container h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
+    .container h1 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
 
-.form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
 
-.form-group {
-    flex: 1 1 30%;
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: 0.9rem;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input[type="text"], input[type="date"] {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-input[type="date"]:disabled {
-    background-color: #ccc;
-    color: #666;
-    cursor: not-allowed;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    flex: 1 1 100%;
-}
-
-button:hover {
-    background-color: #0056cc;
-}
-/* DESTINATION END */
-
-/* SYARAT */
-.syarat-container {
-    margin: 40px auto;
-    max-width: 100%;
-    padding: 70px;
-    padding-right: 10%;
-    padding-left: 10%;
-    background-color: #fff;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-}
-
-.syarat-container h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    border-bottom: 3px solid #007bff;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.syarat-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.syarat-item {
-    flex: 1;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #f9f9ff;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.syarat-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.syarat-item p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.syarat-item ul {
-    list-style: decimal;
-    margin: 0;
-    padding-left: 20px;
-    color: #333;
-    font-size: 0.9rem;
-}
-
-.syarat-item ul ul {
-    list-style: circle inside;
-}
-
-.syarat-item a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.syarat-item a:hover {
-    text-decoration: underline;
-}
-
-
-/* Artikel Section */
-.artikel-section {
-    text-align: center;
-    padding: 70px;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-.artikel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-/* Bagian Teks Artikel */
-.artikel-text {
-    flex: 1;
-    max-width: 300px;
-    text-align: left;
-    text-align: center;
-}
-
-.artikel-text h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.artikel-text p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Bagian Card Artikel */
-.artikel-container {
-    flex: 3;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.artikel-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-    width: 100%;
-    overflow: hidden;
-    text-align: left;
-    transition: transform 0.3s ease;
-}
-
-.artikel-card:hover {
-    transform: translateY(-5px);
-}
-
-.artikel-card img {
-    width: 100%;
-    height: auto;
-}
-
-.artikel-content {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.artikel-content h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin: 0;
-}
-
-.artikel-content p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.artikel-content .button {
-    align-self: start;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.artikel-content .button:hover {
-    background: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .artikel-wrapper {
+    .form-group {
+        flex: 1 1 30%;
+        display: flex;
         flex-direction: column;
     }
 
+    label {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    input[type="text"], input[type="date"] {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    input[type="date"]:disabled {
+        background-color: #ccc;
+        color: #666;
+        cursor: not-allowed;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        flex: 1 1 100%;
+    }
+
+    button:hover {
+        background-color: #0056cc;
+    }
+    /* DESTINATION END */
+
+    /* SYARAT */
+    .syarat-container {
+        margin: 40px auto;
+        max-width: 100%;
+        padding: 70px;
+        padding-right: 10%;
+        padding-left: 10%;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .syarat-container h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        border-bottom: 3px solid #007bff;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .syarat-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .syarat-item {
+        flex: 1;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: #f9f9ff;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .syarat-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+
+    .syarat-item p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .syarat-item ul {
+        list-style: decimal;
+        margin: 0;
+        padding-left: 20px;
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    .syarat-item ul ul {
+        list-style: circle inside;
+    }
+
+    .syarat-item a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .syarat-item a:hover {
+        text-decoration: underline;
+    }
+    /* SYARAT END */
+
+    /* Artikel Section */
+    .artikel-section {
+        text-align: center;
+        padding: 70px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .artikel-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    /* Bagian Teks Artikel */
+    .artikel-text {
+        flex: 1;
+        max-width: 300px;
+        text-align: left;
+        text-align: center;
+    }
+
+    .artikel-text h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .artikel-text p {
+        font-size: 1rem;
+        color: #666;
+    }
+
+    /* Bagian Card Artikel */
     .artikel-container {
+        flex: 3;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
         justify-content: center;
     }
 
     .artikel-card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 250px;
         width: 100%;
+        overflow: hidden;
+        text-align: left;
+        transition: transform 0.3s ease;
     }
-}
+
+    .artikel-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .artikel-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .artikel-content {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .artikel-content h3 {
+        font-size: 1.2rem;
+        color: #333;
+        margin: 0;
+    }
+
+    .artikel-content p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+
+    .artikel-content .button {
+        align-self: start;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    .artikel-content .button:hover {
+        background: #0056b3;
+    }
   </style>
 </head>
 <body>
     <!-- Nav -->
     <nav class="navbar">
-        <a href="#" style="font-size: 25px;" class="navbar-brand">PMANCING</a>
+        <h1 href="#" style="font-size: 25px;" class="navbar-brand">MancingKing</h1>
             <ul class="navbar-nav">
                 <li>
                     <a href="index.html">Beranda</a>
@@ -355,20 +347,20 @@ button:hover {
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Artikel</a>
+                    <a href="#">Panduan</a>
                     <ul class="hov">
-                        <li><a href="artikel.html">artikel</a></li>
-                        <li><a href="#">-</a></li>
-                        <li><a href="#">-</a></li>
-                        <li><a href="#">-</a></li>
+                        <li><a href="artikel-tips.html">Tips</a></li>
+                        <li><a href="artikel-ulasan.html">Ulasan</a></li>
+                        <li><a href="artikel1.html">Info</a></li>
+                        <li><a href="artikel-tutor.html">Tutorial</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">Buku Tamu</a>
                     <ul class="hov">
                         <li><a href="form.html"> Tulis Komentar</a></li>
-                        <li><a href="lapor.html">lapor</a></li>
                         <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                        <li><a href="lapor.html">lapor</a></li>
                         <li><a href="bukutamu.html">Buku Tamu</a></li>
                     </ul>
                 </li>
@@ -386,28 +378,42 @@ button:hover {
     <!-- Nav END -->
           
           <!-- SLIDER -->
-          <div class="slider">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-    
-            <div class="slides">
-                <div class="slide" id="img1">
-                    <img src="istana negara/istana.jpg" alt="Slide 1">
-                </div>
-                <div class="slide" id="img2">
-                    <img src="istana negara/istana2.jpg" alt="Slide 2">
-                </div>
-                <div class="slide" id="img3">
-                    <img src="istana negara/istana3.jpg" alt="Slide 3">
-                </div>
-            </div>
-    
-            <div class="navigation">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-            </div>
+        <div class="slider">
+          <input type="radio" name="slide" id="slide1" checked>
+          <input type="radio" name="slide" id="slide2">
+          <input type="radio" name="slide" id="slide3">
+
+          <div class="slides">
+              <div class="slide">
+                  <img src="artikel/artikel1.jpg" alt="Slide 1">
+                  <div class="text-overlay">
+                      <a href="artikel1.html">
+                          <h1>Apakah Memancing Termasuk Olahraga? Ini Jawabannya</h1>
+                      </a>
+                  </div>
+              </div>
+              <div class="slide">
+                  <img src="artikel/artikel2.jpg" alt="Slide 1">
+                  <div class="text-overlay">
+                      <a href="artikel2.html">
+                          <h1>Pengertian Strike Mancing yang Wajib Diketahui Pemula</h1>
+                      </a>
+                  </div>
+              </div>
+              <div class="slide">
+                  <img src="artikel/artikel3.jpg" alt="Slide 3">
+                  <div class="text-overlay">
+                      Tips Memancing di Laut untuk Pemula
+                  </div>
+              </div>
+          </div>
+          
+
+          <div class="navigation">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+          </div>
         </div>
         <!-- SLIDER END -->
 
@@ -470,25 +476,25 @@ button:hover {
             <!-- Bagian Teks Artikel -->
             <div class="artikel-text">
                 <h2>Artikel</h2>
-                <p>Seputar Artikel Wisata Mancing.</p>
+                <p>Seputar Artikel Mancing.</p>
             </div>
 
             <!-- Bagian Card Artikel -->
             <div class="artikel-container">
                 <div class="artikel-card">
-                    <img src="pict/a.jpg" alt="Artikel 1">
+                    <img src="artikel/artikel1.jpg" alt="Artikel 1">
                     <div class="artikel-content">
-                        <h3>Karbon Biru Jadi Strategi Mitigasi Bencana di Indonesia</h3>
-                        <p>JAKARTA (27/6) – Indonesia tengah mempersiapkan implementasi karbon biru (blue carbon) guna mengur...</p>
-                        <a href="#" class="button">Baca Selengkapnya</a>
+                        <h3>Apakah Memancing Termasuk Olahraga? ini jawabannya </h3>
+                        <p>Apakah memancing termasuk olahraga? Pertanyaan ini banyak dibahas sebagian besar masyarakat, khususnya</p>
+                        <a href="artikel1.html" class="button">Baca Selengkapnya</a>
                     </div>
                 </div>
                 <div class="artikel-card">
-                    <img src="pict/e.jpg" alt="Artikel 2">
+                    <img src="artikel/artikel1.2.jpg" alt="Artikel 2">
                     <div class="artikel-content">
-                        <h3>KKP Optimis Penuhi 32,5 juta Ha Kawasan Konservasi Perairan pada tahun 2030</h3>
-                        <p>JAKARTA (1/7) – Kementerian Kelautan dan Perikanan fokus dalam meningkatkan luas wilayah dan...</p>
-                        <a href="#" class="button">Baca Selengkapnya</a>
+                        <h3>Pengertian Strike Mancing yang Wajib Diketahui Pemula</h3>
+                        <p>Mancing merupakan kegiatan menyenangkan sekaligus bisa digunakan untuk mengisi waktu luang. </p>
+                        <a href="artikel2.html" class="button">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>

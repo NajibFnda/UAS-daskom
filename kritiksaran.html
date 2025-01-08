@@ -1,121 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritik & Saran</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
+     body {
         margin: 0;
         padding: 0;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        height: 100vh;
       }
-      
+
       .container {
-        position: absolute;
-        top: 50%;
-        left: 50%; 
-        transform: translate(-50%, -50%); 
         background-color: #fff;
-        padding: 10px 40px;
+        padding: 20px 30px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 500px;
       }
-        form {
-            margin-bottom: 30px;
-        }
-        label {
-            font-weight: bold;
-            margin-bottom: 8px;
-            display: block;
-            text-align: left;
-        }
-        input[type="text"], input[type="email"], textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 30px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        textarea {
-            resize: vertical;
-            height: 100px;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
 
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input:focus, 
+        textarea:focus {
+        background-color: #f0f8ff;
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        transition: all 0.3s ease-in-out;
+        }
+        
+      .btn-submit {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .btn-submit:hover {
+        background-color: #0056b3;
+      }
 </style>
 </head>
 <body>
-        <!-- Nav -->
-        <nav class="navbar">
-            <a href="#" class="navbar-brand">SOEKARNO</a>
-            <ul class="navbar-nav">
-              <li>
-                <a href="index.html">Beranda</a>
-            </li>
-            <li>
-                <a href="#">Profil</a>
-                <ul class="hov">
-                    <ul class="hov">
-                        <li><a href="profil.html">Profil</a></li>
-                        <li><a href="filosofi.html">Filosofi</a></li>
-                        <li><a href="sejarah.html">Sejarah</a></li>
-                        <li><a href="kontak.html">Kontak</a></li>
-                    </ul>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Artikel</a>
-                <ul class="hov">
-                    <li><a href="artikel.html">artikel</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Buku Tamu</a>
-                <ul class="hov">
-                    <li><a href="form.html"> Tulis Komentar</a></li>
-                    <li><a href="lapor.html">lapor</a></li>
-                    <li><a href="kritiksaran.html">Kritik & Saran</a></li>
-                    <li><a href="bukutamu.html">Buku Tamu</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-                <ul class="hov">
-                    <li><a href="gallery.html">Presiden</a></li>
-                    <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
-                    <li><a href="istananegara.html">Istana Negara</a></li>
-                    <li><a href="kenangan.html">Kenangan Sejarah</a></li>
-                  </ul>
-              </li>
+  <!-- Nav -->
+  <nav class="navbar">
+    <h1 href="#" style="font-size: 25px;" class="navbar-brand">MancingKing</h1>
+      <ul class="navbar-nav">
+        <li>
+          <a href="index.html">Beranda</a>
+      </li>
+      <li>
+          <a href="#">Profil</a>
+          <ul class="hov">
+              <ul class="hov">
+                  <li><a href="profil.html">Profil</a></li>
+                  <li><a href="filosofi.html">Filosofi</a></li>
+                  <li><a href="sejarah.html">Sejarah</a></li>
+                  <li><a href="kontak.html">Kontak</a></li>
+              </ul>
+          </ul>
+      </li>
+      <li>
+        <a href="#">Panduan</a>
+        <ul class="hov">
+            <li><a href="artikel-tips.html">Tips</a></li>
+            <li><a href="artikel-ulasan.html">Ulasan</a></li>
+            <li><a href="artikel1.html">Info</a></li>
+            <li><a href="artikel-tutor.html">Tutorial</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="#">Buku Tamu</a>
+          <ul class="hov">
+              <li><a href="form.html"> Tulis Komentar</a></li>
+              <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+              <li><a href="lapor.html">lapor</a></li>
+              <li><a href="bukutamu.html">Buku Tamu</a></li>
+          </ul>
+      </li>
+      <li>
+          <a href="#">Gallery</a>
+          <ul class="hov">
+              <li><a href="gallery.html">Presiden</a></li>
+              <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
+              <li><a href="istananegara.html">Istana Negara</a></li>
+              <li><a href="kenangan.html">Kenangan Sejarah</a></li>
             </ul>
-          </nav>
-          <!-- Nav END -->
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav END -->
     <div class="container">
 
         <form id="messageForm">
-            <h2>Kritik & Saran</h2>
+            <h1>Kritik & Saran</h1>
             <textarea id="shortMessage" name="shortMessage" placeholder="Tuliskan Kritik & saran Anda"></textarea>
-            
-            <button type="submit">Kirim</button>
+            <br><br>
+            <button type="submit" class="btn-submit">Kirim</button>
         </form>
     </div>
 

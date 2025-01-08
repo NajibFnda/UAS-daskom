@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            margin: auto;
+            flex-direction: column;
+            max-width: 100%;
+            padding: 10px;
+            color: rgb(58, 58, 58);
+            padding-right: 16%;
+            padding-left: 16%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        
+
+/* Bagian Card Artikel */
+.artikel-container {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.artikel-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.artikel-card:hover {
+    transform: translateY(-5px);
+}
+
+.artikel-card img {
+    width: 100%;
+    height: auto;
+}
+
+.artikel-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.artikel-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.artikel-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+.artikel-content .button {
+    margin-top: auto; /* Membuat tombol tetap di bagian bawah */
+    background: none;
+    color: gray;
+    text-decoration: none;
+    /* font-weight: bold; */
+    transition: color 0.3s ease;
+}
+
+.artikel-content .button:hover {
+    color: blue;
+    
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+        <h3 href="#" style="font-size: 25px;" class="navbar-brand">PMANCING</h3>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul class="hov">
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="filosofi.html">Filosofi</a></li>
+                        <li><a href="sejarah.html">Sejarah</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Panduan</a>
+                    <ul class="hov">
+                        <li><a href="artikel-tips.html">Tips</a></li>
+                        <li><a href="artikel-ulasan.html">Ulasan</a></li>
+                        <li><a href="artikel1.html">Info</a></li>
+                        <li><a href="artikel-tutor.html">Tutorial</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Buku Tamu</a>
+                    <ul class="hov">
+                        <li><a href="form.html"> Tulis Komentar</a></li>
+                        <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+                        <li><a href="lapor.html">lapor</a></li>
+                        <li><a href="bukutamu.html">Buku Tamu</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                    <ul class="hov">
+                      <li><a href="gallery.html">Presiden</a></li>
+                      <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
+                      <li><a href="istananegara.html">Istana Negara</a></li>
+                      <li><a href="kenangan.html">Kenangan Sejarah</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    <!-- Nav END -->
+
+    <div class="container">
+
+        <div class="artikel-container">
+            <div class="artikel-card">
+                <img src="artikel/artikel1.2.jpg" alt="Artikel 2">
+                <div class="artikel-content">
+                    <h3>Memancing Ikan di Ujung Jakarta</h3>
+                    <p>Jakarta - Kawasan Muara Baru, berada di ujung utara Jakarta. Tempat ini menjadi spot favorit bagi para pemancing.</p>
+                    <a href="#" class="button">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="artikel-card">
+                <img src="artikel/artikel1.2.jpg" alt="Artikel 2">
+                <div class="artikel-content">
+                    <h3>Apakah Memancing Termasuk Olahraga?</h3>
+                    <p>Apakah memancing termasuk olahraga? Pertanyaan ini banyak dibahas sebagian besar masyarakat, khususnya bagi</p>
+                    <a href="#" class="button">Baca Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

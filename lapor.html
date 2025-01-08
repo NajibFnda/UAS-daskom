@@ -6,39 +6,43 @@
 <title>Laporan</title>
 <link rel="stylesheet" href="style.css">
 <style>
-        body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f9;
-          margin: 0;
-          padding: 0;
-        }
-        .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+       body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
         background-color: #fff;
-        padding: 40px 70px;
+        padding: 20px 30px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 500px;
       }
+
       h1 {
         text-align: center;
         margin-bottom: 20px;
         color: #333;
       }
+
       .form-group {
         margin-bottom: 15px;
       }
+
       label {
         display: block;
         font-weight: bold;
         margin-bottom: 5px;
         color: #555;
       }
+
       input[type="text"],
+      input[type="email"],
       textarea {
         width: 100%;
         padding: 10px;
@@ -52,104 +56,115 @@
         resize: vertical;
       }
 
-      .btn {
-        padding: 10px 20px;
-        background-color: #dc3545;
+      input:focus, 
+        textarea:focus {
+        background-color: #f0f8ff;
+        border-color: #007bff83;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        transition: all 0.3s ease-in-out;
+        }
+        
+      .btn-submit {
+        background-color: #ff0000;
         color: #fff;
         border: none;
-        border-radius: 4px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
         cursor: pointer;
-        float: right;
+        width: 100%;
       }
-      .btn:hover {
-        opacity: 0.8;
-        background-color: #dc3546e4;
+
+      .btn-submit:hover {
+        background-color: #b30000;
       }
+
 </style>
 </head>
 <body>
-        <!-- Nav -->
-        <nav class="navbar">
-            <a href="#" class="navbar-brand">SOEKARNO</a>
-            <ul class="navbar-nav">
-              <li>
-                <a href="index.html">Beranda</a>
-            </li>
-            <li>
-                <a href="#">Profil</a>
-                <ul class="hov">
-                  <li><a href="profil.html">Profil</a></li>
-                  <li><a href="filosofi.html">Filosofi</a></li>
-                  <li><a href="sejarah.html">Sejarah</a></li>
-                  <li><a href="kontak.html">Kontak</a></li>
-              </ul>
-            </li>
-            <li>
-                <a href="#">Artikel</a>
-                <ul class="hov">
-                    <li><a href="artikel.html">artikel</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">-</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Buku Tamu</a>
-                <ul class="hov">
-                  <li><a href="form.html"> Tulis Komentar</a></li>
-                  <li><a href="lapor.html">lapor</a></li>
-                  <li><a href="kritiksaran.html">Kritik & Saran</a></li>
-                  <li><a href="bukutamu.html">Buku Tamu</a></li>
-              </ul>
-            </li>
-            <li>
-                <a href="#">Gallery</a>
-                <ul class="hov">
-                  <li><a href="gallery.html">Presiden</a></li>
-                  <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
-                  <li><a href="istananegara.html">Istana Negara</a></li>
-                  <li><a href="kenangan.html">Kenangan Sejarah</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <!-- Nav END -->
+ <!-- Nav -->
+<nav class="navbar">
+  <h1 href="#" style="font-size: 25px;" class="navbar-brand">MancingKing</h1>
+    <ul class="navbar-nav">
+      <li>
+        <a href="index.html">Beranda</a>
+    </li>
+    <li>
+        <a href="#">Profil</a>
+        <ul class="hov">
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="filosofi.html">Filosofi</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Panduan</a>
+      <ul class="hov">
+          <li><a href="artikel-tips.html">Tips</a></li>
+          <li><a href="artikel-ulasan.html">Ulasan</a></li>
+          <li><a href="artikel1.html">Info</a></li>
+          <li><a href="artikel-tutor.html">Tutorial</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#">Buku Tamu</a>
+        <ul class="hov">
+          <li><a href="form.html"> Tulis Komentar</a></li>
+          <li><a href="kritiksaran.html">Kritik & Saran</a></li>
+          <li><a href="lapor.html">lapor</a></li>
+          <li><a href="bukutamu.html">Buku Tamu</a></li>
+      </ul>
+    </li>
+    <li>
+        <a href="#">Gallery</a>
+        <ul class="hov">
+          <li><a href="gallery.html">Presiden</a></li>
+          <li><a href="kegiatan.html">Kegiatan Presiden</a></li>
+          <li><a href="istananegara.html">Istana Negara</a></li>
+          <li><a href="kenangan.html">Kenangan Sejarah</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Nav END -->
 
 
-          <div class="container">
-            <h1>Sampaikan Laporan Anda</h1>
-            <form action="#" method="POST" class="message-form">
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input
-                  type="text"
-                  id="nama"
-                  name="nama"
-                  placeholder="Ketik Nama Anda"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Judul Laporan</label>
-                <input
-                  type="text"
-                  id="judul"
-                  name="judul"
-                  placeholder="Ketik Judul Laporan Anda"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="pesan">Isi Laporan</label>
-                <textarea
-                  id="pesan"
-                  name="pesan"
-                  rows="5"
-                  placeholder="Ketik Isi Laporan Anda"
-                  required
-                ></textarea>
-              </div>
-    <button class="btn">Kirim Laporan</button>
+  <div class="container">
+    <h1>Sampaikan Laporan Anda</h1>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="nama">Nama</label>
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          placeholder="Ketik Nama Anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Judul Laporan</label>
+        <input
+          type="text"
+          id="judul"
+          name="judul"
+          placeholder="Ketik Judul Laporan Anda"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="pesan">Isi Laporan</label>
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="5"
+          placeholder="Ketik Isi Laporan Anda"
+          required
+        ></textarea>
+      </div>
+    <button type="submit" class="btn-submit">Kirim Laporan</button>
   </div>
 </div>
 </body>
