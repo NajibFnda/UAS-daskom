@@ -28,6 +28,9 @@ button{
 label,input{
   font-family: 'book';
 }
+a{
+  font-family: 'book';
+}
 p {
   font-size: 18px;
   color: #545454;
