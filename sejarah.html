@@ -1,178 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .image {
-            display: flex;
-            overflow: hidden;
-            position: relative;
-            width: 100%;
-            height: 300px;
-        }
-        
-        .images {
-            width: 100%;
-            flex-shrink: 0;
-        }
-        .images img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .sejarah-container {
-            margin: auto;
-            max-width: 100%;
-            padding: 10px;
-            color: rgb(58, 58, 58);
-            padding-right: 16%;
-            padding-left: 16%;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .sejarah-container h2 {
-            text-align: center;
-            color: #333;
-            margin-top: 50px;
-            margin-bottom: 10px;
-            font-size: 1.8rem; 
-            border-bottom: 3px solid #007bff;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .gambar{
-            float: right;
-            margin: 2px;
-            padding: 2px;
-            display: block;
-        }
-        .img{
-            width: 70px;
-            float: right;
-            margin: 2px;
-            padding: 2px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sejarah - MancingKing</title>
+  <link rel="icon" type="image/svg+xml" href="pict/favicon.svg">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Nav -->
-    <nav class="navbar">
-        <h1 href="#" style="font-size: 25px;" class="navbar-brand">MancingKing</h1>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="index.html">Beranda</a>
-                </li>
-                <li>
-                    <a href="#">Profil</a>
-                    <ul class="hov">
-                        <li><a href="profil.html">Profil</a></li>
-                          <li><a href="filosofi.html">Filosofi</a></li>
-                          <li><a href="sejarah.html">Sejarah</a></li>
-                          <li><a href="kontak.html">Kontak</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Panduan</a>
-                    <ul class="hov">
-                        <li><a href="artikel-tips.html">Tips</a></li>
-                        <li><a href="artikel-ulasan.html">Ulasan</a></li>
-                        <li><a href="artikel1.html">Info</a></li>
-                        <li><a href="artikel-tutor.html">Tutorial</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Buku Tamu</a>
-                    <ul class="hov">
-                        <li><a href="form.html"> Tulis Komentar</a></li>
-                        <li><a href="kritiksaran.html">Kritik & Saran</a></li>
-                        <li><a href="lapor.html">lapor</a></li>
-                        <li><a href="bukutamu.html">Buku Tamu</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Galeri</a>
-                    <ul class="hov">
-                      <li><a href="foto.html">Foto</a></li>
-                      <li><a href="video.html">Video</a></li>
-                      <li><a href="tangkapan.html">Tangkapan</a></li>
-                      <li><a href="event.html">Event</a></li>
-                    </ul>
-                </li>
-            </ul>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navigasi Utama">
+      <a href="index.html" class="navbar-brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 4v11a5 5 0 0 1-10 0v-1l3 2" />
+            <circle cx="18" cy="4" r="1.5" />
+          </svg>
+        </span>
+        <span>Mancing<strong>King</strong></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar-nav" id="primary-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Beranda</a>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="profil.html" class="nav-link dropdown-toggle" aria-expanded="false">
+            Profil
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="hov">
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="filosofi.html">Filosofi</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="article.html" class="nav-link dropdown-toggle" aria-expanded="false">
+            Panduan
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="hov">
+            <li><a href="article.html">Semua Artikel</a></li>
+            <li><a href="artikel-tips.html">Tips</a></li>
+            <li><a href="artikel-ulasan.html">Ulasan</a></li>
+            <li><a href="artikel1.html">Info</a></li>
+            <li><a href="artikel-tutor.html">Tutorial</a></li>
+            <li><a href="artikel2.html">Istilah Strike</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="bukutamu.html" class="nav-link dropdown-toggle" aria-expanded="false">
+            Buku Tamu
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="hov">
+            <li><a href="bukutamu.html">Buku Tamu</a></li>
+            <li><a href="form.html">Tulis Komentar</a></li>
+            <li><a href="kritiksaran.html">Kritik &amp; Saran</a></li>
+            <li><a href="lapor.html">Lapor</a></li>
+          </ul>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="foto.html" class="nav-link dropdown-toggle" aria-expanded="false">
+            Galeri
+            <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <ul class="hov">
+            <li><a href="foto.html">Foto</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="tangkapan.html">Tangkapan</a></li>
+            <li><a href="event.html">Event</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-    <!-- Nav END -->
+  </header>
 
-    <!-- SEJARAH -->
-    <div class="image">
-        <div class="images" id="img1">
-            <img src="pict/sejarah.png" alt="Slide 1">
-       </div>
-    </div>
-    <div class="sejarah-container">
-        <div class="content">
-            <h2>SEJARAH</h2>
-            <br>
-            <div class="gambar">
-                <img class="img" src="pict/kail2.png" alt="">
-                <img class="img" src="pict/kail.jpg" alt="">
-            </div>
-            <p>
-                Memancing adalah salah satu kegiatan yang sudah ada sejak zaman prasejarah dan terus berkembang seiring berjalannya waktu. Pada masa awal, manusia purba menggunakan alat yang sangat sederhana, seperti batu atau batang kayu, untuk menangkap ikan di sungai atau laut. Kegiatan ini sangat vital untuk bertahan hidup, sebagai sumber makanan utama. Beberapa bukti arkeologis menunjukkan bahwa manusia purba telah menggunakan alat pancing sejak 40.000 tahun yang lalu, menandakan bahwa memancing merupakan salah satu cara utama untuk memperoleh makanan pada masa itu
-            </p>
-            <p>
-                Pada peradaban Mesir Kuno, memancing mulai berkembang lebih jauh. Masyarakat Mesir menggunakan alat pancing yang terbuat dari bahan-bahan alami seperti tulang, kayu, dan logam. Selain itu, mereka juga mulai menggunakan teknik yang lebih efisien, seperti jaring dan perangkap ikan, yang memungkinkan mereka menangkap lebih banyak ikan dalam waktu yang lebih singkat. Memancing bukan hanya menjadi kegiatan untuk memenuhi kebutuhan pribadi, tetapi juga berperan dalam perdagangan, yang menjadi bagian penting dari ekonomi masyarakat Mesir kuno.
-            </p>
-            <p>
-                Di Yunani dan Romawi Kuno, memancing menjadi kegiatan yang lebih beragam, baik untuk kebutuhan rekreasi maupun komersial. Masyarakat pada masa itu mulai menggunakan alat pancing yang lebih canggih, seperti kail yang lebih kuat dan umpan yang lebih efektif. Selain untuk mencari makanan, memancing menjadi kegiatan sosial dan hiburan yang digemari kalangan atas, bahkan banyak karya sastra Yunani yang menggambarkan kegiatan memancing sebagai bagian dari kehidupan yang memiliki nilai estetika. Teknik-teknik memancing pada masa ini juga semakin berkembang, dengan penemuan alat pancing yang lebih efisien.
-            </p>
-            <div class="gambar">
-                <img class="img" style="width: 200px;" src="pict/110.jpg" alt="">
-            </div>
-            <p>
-                Pada abad pertengahan, kegiatan memancing semakin menyebar di Eropa. Di era ini, memancing tidak hanya dilakukan untuk mencari ikan sebagai sumber pangan, tetapi juga untuk tujuan rekreasi, terutama di kalangan bangsawan. Penggunaan jaring dan alat pancing semakin berkembang, memungkinkan hasil tangkapan yang lebih melimpah. Selain itu, pada masa ini muncul pula pemisahan antara memancing untuk keperluan konsumsi pribadi dan memancing untuk tujuan komersial, yang mulai menjadi industri kecil di beberapa wilayah.
-            </p>
-            <p>
-                Memasuki Revolusi Industri pada abad ke-18 dan ke-19, produksi alat pancing menjadi lebih efisien dan terjangkau. Hal ini membuat kegiatan memancing semakin populer di kalangan masyarakat umum. Teknologi yang semakin maju, termasuk penggunaan kapal pemancing canggih dan sonar untuk menemukan lokasi ikan, mengubah cara orang memancing. Pada abad ke-20, memancing berkembang menjadi hobi yang sangat digemari oleh berbagai kalangan, dengan munculnya berbagai turnamen dan komunitas pemancing. Kini, memancing tidak hanya menjadi cara untuk mencari ikan, tetapi juga merupakan bagian dari industri rekreasi global yang memiliki dampak sosial dan ekonomi yang signifikan.
-            </p>
-        </div>
-    </div>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Beranda</a>
+          <span>/</span>
+          <a href="profil.html">Profil</a>
+          <span>/</span>
+          <span>Sejarah</span>
+        </nav>
+        <h1>Sejarah Memancing</h1>
+        <p>Menelusuri jejak evolusi aktivitas memancing dari zaman prasejarah hingga menjadi olahraga rekreasi modern.</p>
+      </div>
+    </section>
 
-        <!-- button up  -->
-        <a href="#top" class="btn-up" >
-            <img src="pict/btn-up.png" width="35" height="35" class="pp"/>
-        </a>
-    
-    <footer id="footer">
-        <div class="col col1">
-          <h3>MancingKing</h3>
-          <div class="social">
-              <a href="" class="link"><img src="pict/icon-ig.jpg" alt="" /></a>
-              <a href="" class="link"><img src="pict/icon-ig.jpg" alt="" /></a>
-              <a href="" class="link"><img src="pict/icon-ig.jpg" alt="" /></a>
+    <section class="section">
+      <div class="container">
+        <div class="surface-card prose-card">
+          <h2 class="content-heading">SEJARAH</h2>
+
+          <div class="history-block">
+            <div>
+              <p>Memancing adalah salah satu kegiatan yang sudah ada sejak zaman prasejarah dan terus berkembang seiring berjalannya waktu. Pada masa awal, manusia purba menggunakan alat yang sangat sederhana, seperti batu atau batang kayu, untuk menangkap ikan di sungai atau laut. Kegiatan ini sangat vital untuk bertahan hidup sebagai sumber makanan utama. Beberapa bukti arkeologis menunjukkan bahwa manusia purba telah menggunakan alat pancing sejak 40.000 tahun yang lalu, menandakan bahwa memancing merupakan salah satu cara utama untuk memperoleh makanan pada masa itu.</p>
+              <p>Pada peradaban Mesir Kuno, memancing mulai berkembang lebih jauh. Masyarakat Mesir menggunakan alat pancing yang terbuat dari bahan-bahan alami seperti tulang, kayu, dan logam. Selain itu, mereka juga mulai menggunakan teknik yang lebih efisien, seperti jaring dan perangkap ikan, yang memungkinkan mereka menangkap lebih banyak ikan dalam waktu yang lebih singkat. Memancing bukan hanya menjadi kegiatan untuk memenuhi kebutuhan pribadi, tetapi juga berperan dalam perdagangan, yang menjadi bagian penting dari ekonomi masyarakat Mesir kuno.</p>
             </div>
-            <p style="color: #818181; font-size: smaller">2025 © All Rights Reserved</p>
+            <figure class="history-figure">
+              <div class="history-figure-row">
+                <img src="pict/kail2.png" alt="Kail pancing kuno dengan pemberat dan tali serat">
+                <img src="pict/kail.jpg" alt="Kail pancing tradisional berukir">
+              </div>
+              <figcaption>Contoh kail pancing kuno dan tali serat alami.</figcaption>
+            </figure>
+          </div>
+
+          <p>Di Yunani dan Romawi Kuno, memancing menjadi kegiatan yang lebih beragam, baik untuk kebutuhan rekreasi maupun komersial. Masyarakat pada masa itu mulai menggunakan alat pancing yang lebih canggih, seperti kail yang lebih kuat dan umpan yang lebih efektif. Selain untuk mencari makanan, memancing menjadi kegiatan sosial dan hiburan yang digemari kalangan atas, bahkan banyak karya sastra Yunani yang menggambarkan kegiatan memancing sebagai bagian dari kehidupan yang memiliki nilai estetika. Teknik-teknik memancing pada masa ini juga semakin berkembang, dengan penemuan alat pancing yang lebih efisien.</p>
+
+          <div class="history-block" style="margin-top: 24px; margin-bottom: 0;">
+            <div>
+              <p>Pada abad pertengahan, kegiatan memancing semakin menyebar di Eropa. Di era ini, memancing tidak hanya dilakukan untuk mencari ikan sebagai sumber pangan, tetapi juga untuk tujuan rekreasi, terutama di kalangan bangsawan. Penggunaan jaring dan alat pancing semakin berkembang, memungkinkan hasil tangkapan yang lebih melimpah. Selain itu, pada masa ini muncul pula pemisahan antara memancing untuk keperluan konsumsi pribadi dan memancing untuk tujuan komersial, yang mulai menjadi industri kecil di beberapa wilayah.</p>
+              <p style="margin-bottom: 0;">Memasuki Revolusi Industri pada abad ke-18 dan ke-19, produksi alat pancing menjadi lebih efisien dan terjangkau. Hal ini membuat kegiatan memancing semakin populer di kalangan masyarakat umum. Teknologi yang semakin maju, termasuk penggunaan kapal pemancing canggih dan sonar untuk menemukan lokasi ikan, mengubah cara orang memancing. Pada abad ke-20, memancing berkembang menjadi hobi yang sangat digemari oleh berbagai kalangan, dengan munculnya berbagai turnamen dan komunitas pemancing. Kini, memancing tidak hanya menjadi cara untuk mencari ikan, tetapi juga merupakan bagian dari industri rekreasi global yang memiliki dampak sosial dan ekonomi yang signifikan.</p>
+            </div>
+            <figure class="history-figure is-wide">
+              <img src="pict/110.jpg" alt="Dokumentasi foto sejarah pemancingan ikan marlin pada awal abad ke-20">
+              <figcaption>Dokumentasi pemancingan laut awal abad ke-20.</figcaption>
+            </figure>
+          </div>
         </div>
-        <div class="col col2">
-        <h3 style="color: rgb(74, 74, 74);">Link Cepat</h3>
-          <a href="index.html"><p>Beranda</p></a>
-          <a href="profil.html"><p>Profil</p></a>
-          <a href="artikel-tutor.html"><p>Panduan</p></a>
-          <a href="bukutamu.html"><p>Buku Tamu</p></a>
-          <a href="foto.html"><p>Galeri</p></a>
+      </div>
+    </section>
+  </main>
+
+  <a href="#top" class="btn-up" id="btn-up" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </a>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">Mancing<strong>King</strong></a>
+        <p class="footer-desc">Portal komunitas, panduan teknik, dan dokumentasi seputar dunia memancing untuk pemula hingga penghobi berpengalaman.</p>
+        <div class="social">
+          <a href="kontak.html" class="social-link" aria-label="Instagram MancingKing" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="video.html" class="social-link" aria-label="Galeri Video MancingKing" title="Galeri Video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+          </a>
+          <a href="kontak.html" class="social-link" aria-label="Hubungi MancingKing" title="Kontak">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
         </div>
-        <div class="col col3">
-        <h3 style="color: rgb(74, 74, 74);">Artikel</h3>
-          <a href="artikel-tips.html"><p>Tips Memancing</p></a>
-          <a href="artikel-ulasan.html"><p>Rekomendasi tempat</p></a>
-          <a href="artikel1.html"><p>Informasi</p></a>
-          <a href="artikel-tutor.html"><p>Tutorial Memancing</p></a>
-          <a href="artikel2.html"><p>Pengertian Strike</p></a>
-        </div>
-       </footer>
+        <p class="footer-copy">&copy; 2025&ndash;2026 MancingKing. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h3>Link Cepat</h3>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="article.html">Panduan</a></li>
+          <li><a href="bukutamu.html">Buku Tamu</a></li>
+          <li><a href="foto.html">Galeri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h3>Artikel</h3>
+        <ul>
+          <li><a href="artikel-tips.html">Tips Memancing</a></li>
+          <li><a href="artikel-ulasan.html">Rekomendasi Tempat</a></li>
+          <li><a href="artikel1.html">Informasi</a></li>
+          <li><a href="artikel-tutor.html">Tutorial Memancing</a></li>
+          <li><a href="artikel2.html">Pengertian Strike</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
